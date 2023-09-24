@@ -99,6 +99,7 @@ void Result::getInfo()
 void Result::getScores()
 {
     float sum = 0;
+    
     // convert percentage to cgpa
     for (int i = 1; i <= *trimesterCourseCount; i++)
     {
