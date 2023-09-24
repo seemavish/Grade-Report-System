@@ -1,5 +1,4 @@
 #include "gradeReportSystem.h"
-// #include "gradeReportSystem.cpp"
 
 #include <iomanip>
 #include <iostream>
@@ -10,12 +9,15 @@ int main()
 {
 
     // create a report using result class
-    Result report;
+    Result* report = new Result;
 
     // get student details
-    report.getInfo();
+    report->getInfo();
 
-    report.printDetails();
+    report->printDetails();
+
+    delete report;
+
     return 0;
 }
 

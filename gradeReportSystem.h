@@ -11,11 +11,13 @@ class Result
 {
 
 public:
-    string name, studentId;
-    float cgpaScore, previousTGPA, currentTGPA;
-    int trimesterCourseCount, totalCourses;
+    string* name, *studentId;
+    float* cgpaScore, *previousTGPA, *currentTGPA;
+    int* trimesterCourseCount, *totalCourses;
     vector<string> courses;
-
+    
+    Result();
+    ~Result();
     bool isValidId(const string studentId);
     void getInfo();
     void getScores();
